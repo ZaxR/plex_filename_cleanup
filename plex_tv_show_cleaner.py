@@ -12,7 +12,7 @@ def convert_bracket_x_fmt(episode):
 
 
 EPISODE_CLEANUP = [
-    {"episode_fmt": "(S[0-9]{0,2}E[0-9]{0,3})", "clean_fmt": make_uppercase},
+    {"episode_fmt": "(S[0-9]+E[0-9]+)", "clean_fmt": make_uppercase},
     {"episode_fmt": "(\[[0-9]+x[0-9]+-?[0-9]*?\])", "clean_fmt": convert_bracket_x_fmt},
     # {"episode_fmt": "(\s+[0-9]{3, 4}\s+)", "clean_fmt": f"{S}{episode[0]}{E}{episode[1:]}"},
     # S+E as one number -or- episode number from beginning of series
